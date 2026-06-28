@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pewaris Widgets — Demo</title>
+<meta name="description" content="Live demo of all Pewaris widget types — football standings, fixtures, predictions, and togel draw results.">
+<style>
+  :root { --deep:#3a0b12; --bd:#e2e5e9; --mut:#5a5f67; --bg:#eceef1; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:#15171a}
+  header{background:var(--deep);color:#fff;padding:22px 20px}
+  header h1{font-size:20px;font-weight:700;margin-bottom:6px}
+  header p{font-size:13px;opacity:.75}
+  .hnav{display:flex;gap:20px;margin-top:12px;flex-wrap:wrap}
+  .hnav a{color:#fff;font-size:13px;font-weight:600;text-decoration:none;opacity:.8}
+  .hnav a:hover{opacity:1}
+  .section{max-width:1200px;margin:0 auto;padding:28px 20px 0}
+  .section h2{font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;margin-bottom:32px}
+  .cell h3{font-size:11px;font-weight:700;color:var(--mut);margin-bottom:8px}
+  .full{margin-bottom:32px}
+  .full h3{font-size:11px;font-weight:700;color:var(--mut);margin-bottom:8px}
+  footer{text-align:center;padding:32px 20px;font-size:12px;color:var(--mut)}
+  footer a{color:var(--mut)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Pewaris Widgets — Demo</h1>
+  <p>All widget types, rendering live data.</p>
+  <nav class="hnav">
+    <a href="index.html">Documentation</a>
+    <a href="https://widgets.pewaris.dev/widget/docs" target="_blank" rel="noopener">Widget Builder</a>
+    <a href="https://pewaristotoprediksi.com" target="_blank" rel="noopener">Pewaristoto Prediksi</a>
+  </nav>
+</header>
+
+<div class="section">
+  <h2>Togel — Results and history</h2>
+  <div class="grid">
+    <div class="cell">
+      <h3>Result — SG Toto</h3>
+      <div class="whistle-widget" data-type="result" data-market="sgtoto"></div>
+    </div>
+    <div class="cell">
+      <h3>Result — Singapore 4D</h3>
+      <div class="whistle-widget" data-type="result" data-market="sg4d"></div>
+    </div>
+    <div class="cell">
+      <h3>Result — Toto Macau</h3>
+      <div class="whistle-widget" data-type="result" data-market="macau"></div>
+    </div>
+    <div class="cell">
+      <h3>History — Hongkong Pools (last 6 draws)</h3>
+      <div class="whistle-widget" data-type="history" data-market="hkpools" data-max="6"></div>
+    </div>
+    <div class="cell">
+      <h3>Result — Sydney Pools</h3>
+      <div class="whistle-widget" data-type="result" data-market="sdypools"></div>
+    </div>
+    <div class="cell">
+      <h3>Prediction — Singapore 4D</h3>
+      <div class="whistle-widget" data-type="prediksi" data-market="sg4d"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Togel — Multi-market board</h2>
+  <div class="full">
+    <h3>Board — all popular markets, full grid layout</h3>
+    <div class="whistle-widget" data-type="board" data-layout="full"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Football — Standings and fixtures</h2>
+  <div class="grid">
+    <div class="cell">
+      <h3>Standings — Premier League</h3>
+      <div class="whistle-widget" data-type="standings" data-league="39"></div>
+    </div>
+    <div class="cell">
+      <h3>Standings — La Liga</h3>
+      <div class="whistle-widget" data-type="standings" data-league="140"></div>
+    </div>
+    <div class="cell">
+      <h3>Fixtures — Champions League</h3>
+      <div class="whistle-widget" data-type="games" data-league="2"></div>
+    </div>
+    <div class="cell">
+      <h3>Fixtures — Liga 1 Indonesia</h3>
+      <div class="whistle-widget" data-type="games" data-league="253"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Football — Match predictions</h2>
+  <div class="grid">
+    <div class="cell">
+      <h3>Predictions — World Cup 2026</h3>
+      <div class="whistle-widget" data-type="prediction" data-league="1" data-season="2026" data-max="2"></div>
+    </div>
+    <div class="cell">
+      <h3>Predictions — Premier League</h3>
+      <div class="whistle-widget" data-type="prediction" data-league="39" data-max="3"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Dark mode</h2>
+  <div class="grid">
+    <div class="cell">
+      <h3>Result — Macau, dark</h3>
+      <div class="whistle-widget" data-type="result" data-market="macau" data-theme="dark"></div>
+    </div>
+    <div class="cell">
+      <h3>Standings — Serie A, dark</h3>
+      <div class="whistle-widget" data-type="standings" data-league="135" data-theme="dark"></div>
+    </div>
+    <div class="cell">
+      <h3>Predictions — World Cup, dark with custom accent</h3>
+      <div class="whistle-widget" data-type="prediction" data-league="1" data-season="2026" data-theme="dark" data-accent="#f59e0b" data-max="2"></div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 20px 8px"></div>
+
+<footer>
+  <p>Pewaris Widgets is part of the <a href="https://pewaristotoprediksi.com" target="_blank" rel="noopener">Pewaristoto</a> ecosystem, built by <a href="https://pewaris.dev" target="_blank" rel="noopener">Pewarisgroup</a>.</p>
+  <p style="margin-top:4px"><a href="index.html">Documentation</a> &nbsp;&middot;&nbsp; <a href="https://widgets.pewaris.dev/widget/docs" target="_blank" rel="noopener">Widget Builder</a></p>
+</footer>
+
+<script src="https://widgets.pewaris.dev/api/widget/script" async></script>
+
+</body>
+</html>
